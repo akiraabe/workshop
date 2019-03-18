@@ -9,10 +9,10 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
-public /**
+/**
  * 料金計算全体のFacadeです。
  */
-class PriceService {
+public class PriceService {
 
     private SeasonType seasonType;
     private RoomType roomType;
