@@ -32,6 +32,8 @@ public class PriceServiceTest {
         assertThat(priceDetails.get(0).getAgeType()).isEqualTo(AgeType.ADULT);
         assertThat(priceDetails.get(0).getPrice().toString()).isEqualTo("20520");
 
+        assertThat(priceDetails.get(2).getAgeType()).isEqualTo(AgeType.CHILD);
+        assertThat(priceDetails.get(2).getPrice().toString()).isEqualTo("16416.0");
 
     }
 }
