@@ -14,6 +14,8 @@ import java.util.List;
  */
 public class PriceService {
 
+    private final static  String DISCOUNT_RATE = "0.8";
+
     private SeasonType seasonType;
     private RoomType roomType;
     private Party party;
@@ -49,7 +51,7 @@ public class PriceService {
             if (ageType == AgeType.ADULT) {
                 priceDetail.setPrice(basePrice);
             } else if (ageType == AgeType.CHILD) {
-                priceDetail.setPrice(basePrice.discountByRate(new BigDecimal(("0.8")))); //TODO: 定数べた書き！
+                priceDetail.setPrice(basePrice.discountByRate(new BigDecimal((DISCOUNT_RATE))));
             } else {
                 BigDecimal babyPrice = BigDecimal.ZERO;
                 if (priceDetail.getBabyNeedBed()) {
