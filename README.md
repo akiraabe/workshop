@@ -2,3 +2,6 @@
 
 Feature
 * Calculate prices.
+
+Test
+* Happy path test.
